@@ -14,4 +14,16 @@ body {
 }
 .content h2 {
   position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 15em;
+}
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 3px #333;
+  filter: blur(3px);
+}
+.content h2:nth-child(3) {
+  color: #fff6;
+  filter: drop-shadow(0 15px 15px #fff);
+  z-index: 1;
 }
