@@ -8,40 +8,20 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: rgb(37, 37, 37);
+  background: #0c0c0c;
 }
-.content {
-  height: 400px;
-  width: 300px;
-  background: black;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+
+a {
   position: relative;
+  padding: 20px 50px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 200px;
 }
-.content::before {
-  content: "";
-  height: 140%;
-  width: 180px;
-  position: absolute;
-  background-color: white;
-  box-shadow: 0 0 20px rgb(8, 8, 8);
-  animation: animate 4s linear infinite;
-}
-.content::after {
-  content: "";
-  inset: 10px;
-  border-radius: 16px;
-  position: absolute;
-  background: rgb(37, 37, 37);
-}
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+
+a span {
+  position: relative;
+  z-index: 1;
+  color: #fff;
 }
