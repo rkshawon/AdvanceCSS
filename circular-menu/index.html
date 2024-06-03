@@ -7,6 +7,39 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="content"></div>
+    <div class="menu">
+      <div class="toggle">M</div>
+      <li style="--i: 0; --clr: #18777f2">
+        <a href="#">N</a>
+      </li>
+      <li style="--i: 1; --clr: #ea4c89">
+        <a href="#">P</a>
+      </li>
+      <li style="--i: 2; --clr: #ff0000">
+        <a href="#">T</a>
+      </li>
+      <li style="--i: 3; --clr: #ea4c89">
+        <a href="#">Q</a>
+      </li>
+      <li style="--i: 4; --clr: #ff0000">
+        <a href="#">S</a>
+      </li>
+      <li style="--i: 5; --clr: #ea4c89">
+        <a href="#">A</a>
+      </li>
+      <li style="--i: 6; --clr: #ea4c89">
+        <a href="#">B</a>
+      </li>
+      <li style="--i: 7; --clr: #ff0000">
+        <a href="#">G</a>
+      </li>
+    </div>
+    <script>
+      let menu = document.querySelector(".menu");
+      let toggle = document.querySelector(".toggle");
+      toggle.onclick = function () {
+        menu.classList.toggle("active");
+      };
+    </script>
   </body>
 </html>
